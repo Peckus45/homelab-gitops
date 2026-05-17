@@ -4,7 +4,7 @@ metadata:
   name: whoami
   namespace: default
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: whoami
@@ -41,7 +41,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: whoami.home.lab
+    - host: whoami.peckusweb.pro
       http:
         paths:
           - path: /
